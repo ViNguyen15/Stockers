@@ -16,10 +16,8 @@ class App extends Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD
-        <Ham />
+        <Ham >
         <hr></hr>
-=======
         <Navbar />
         <Tabs></Tabs>
         <hr></hr>
@@ -29,8 +27,7 @@ class App extends Component {
           <Route path="/" exact component={Welcome} />
         </div>
       </Fragment> */}
-
->>>>>>> e3c378ed705789c7e090e3cdc7b9a6202f027d38
+  </Ham>
         <DashComp></DashComp>
         <hr></hr>
 
