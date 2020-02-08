@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Image } from 'react-bootstrap';
 
 export default class home extends Component {
     render() {

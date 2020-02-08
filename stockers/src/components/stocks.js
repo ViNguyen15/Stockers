@@ -2,7 +2,14 @@ import React, { Component } from 'react'
 import StockCard from './stockCard';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
 export default class stocks extends Component {
+    state = {
+        latestPerf: {
+
+        }
+    };
+
     render() {
         return (
                <React.Fragment>
