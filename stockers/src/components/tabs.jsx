@@ -31,8 +31,8 @@ export default class Tabs extends React.Component {
   render() {
     return (
       <div>
-        <h1>STOCKERS</h1>
-        <br></br>
+        {/* <h1>STOCKERS</h1>
+        <br></br> */}
         <div className="tab">
           {this.state.data.map((button, i) => (
             <button

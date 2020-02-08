@@ -10,11 +10,13 @@ import DashComp from "./components/dashboardcomp.jsx";
 //import "./App.css";
 import Logos from "./components/logo.jsx";
 import Tabs from "./components/tabs.jsx";
+import Navbar from "./components/navbar";
 
 class App extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <Tabs></Tabs>
         <hr></hr>
         {/* <Fragment>
