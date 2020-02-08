@@ -14,19 +14,8 @@ class App extends Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD
         <Ham />
         <hr></hr>
-=======
-
-        {/* <Fragment>
-        <NavBar />
-        <div className="container-fluid">
-          <Route path="/" exact component={Welcome} />
-        </div>
-      </Fragment> */}
-
->>>>>>> 8d505a272970ff3e1739e7aee45cc51a6bec8ca9
         <DashComp></DashComp>
         <hr></hr>
         <Logos>hi</Logos>
