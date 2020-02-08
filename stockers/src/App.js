@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 //import logo from "./logo.svg";
 import DashComp from "./components/dashboardcomp.jsx";
+//import Tabs from "./components/tabs.jsx";
+import Ham from "./components/ham.jsx";
 //import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div>
+        <Ham />
+        <hr></hr>
         <DashComp></DashComp>
         <hr></hr>
       </div>
