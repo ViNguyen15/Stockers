@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import {Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 // import NavBar from './components/NavBar';
 // import Welcome from './components/Welcome';
 //import withSplashScreen from "./components/withSplashScreen";
@@ -11,27 +11,16 @@ import DashComp from "./components/dashboardcomp.jsx";
 import Logos from "./components/logo.jsx";
 import Tabs from "./components/tabs.jsx";
 import Navbar from "./components/navbar";
+import Sidenav from "./components/sideNav";
+import { Container } from "react-bootstrap";
+
 
 class App extends Component {
   render() {
     return (
-      <div>
+        <div>
         <Navbar />
-        <Tabs></Tabs>
-        <hr></hr>
-        {/* <Fragment>
-        <NavBar />
-        <div className="container-fluid">
-          <Route path="/" exact component={Welcome} />
         </div>
-      </Fragment> */}
-
-        <DashComp></DashComp>
-        <hr></hr>
-
-        <Logos>hi</Logos>
-        <hr></hr>
-      </div>
     );
   }
 }
