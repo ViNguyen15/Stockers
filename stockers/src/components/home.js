@@ -5,7 +5,7 @@ export default class home extends Component {
     render() {
         return (
             <div>
-                <h1>Home component</h1>
+                <Image height="100%" width="100%" src="https://sevensreport.com/wp-content/uploads/2016/07/stock-market-3.jpg"/>
             </div>
         )
     }

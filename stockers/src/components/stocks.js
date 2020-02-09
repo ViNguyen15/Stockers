@@ -26,21 +26,35 @@ export default class stocks extends Component {
         console.log(this.jsonResponse);
         return (
         <React.Fragment>
-        <h1>Stocks Component</h1>
+            <br/><br/>
         <Container>
         <Row>
         <Col sm><StockCard 
-        header="Nintendo" 
-        title="$745.61"
-        text="-$0.89 (-0.12%) Today -$2.46 (-0.33%) After Hours"/></Col>
+        header="Nintendo - NTDOY" 
+        title="$46.03"
+        text="-0.30 (-0.65%) Today -$4.16 (-0.96%) After Hours"/></Col>
     <Col sm><StockCard 
-    header="Tesla" 
+    header="Tesla - TSLA" 
         title="$745.61"
-        text="-$0.89 (-0.12%) Today -$2.46 (-0.33%) After Hours"/></Col>
-    <Col sm><StockCard header="Sony" 
+        text="-$0.89 (-0.12%) Today -$2.76 (-0.13%) After Hours"/></Col>
+    <Col sm><StockCard header="Sony - SNE" 
         title="$745.61"
-        text="-$0.89 (-0.12%) Today -$2.46 (-0.33%) After Hours"/></Col>
-  </Row>
+        text="-$0.29 (-0.12%) Today -$1.46 (-0.43%) After Hours"/></Col>
+  </Row><br/><br/>
+  <Row>
+  <Col sm><StockCard 
+        header="Microsoft - MSFT" 
+        title="$145.69"
+        text="+$0.45 (-0.11%) Today +$2.46 (+0.43%) After Hours"/></Col>
+        <Col sm><StockCard 
+        header="Google - GOOGL" 
+        title="$71.12"
+        text="+$0.39 (+0.14%) Today +$1.46 (+0.13%) After Hours"/></Col>
+        <Col sm><StockCard 
+        header="Teradyne - TER" 
+        title="$45.61"
+        text="+$0.89 (+0.09%) Today +$0.46 (+0.06%) After Hours"/></Col>
+        </Row>
 </Container>
       </React.Fragment>
         );
