@@ -13,13 +13,29 @@ import Tabs from "./components/tabs.jsx";
 import Navbar from "./components/navbar";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      isloaded: false
+    };
+  }
+
+  componentDidMount() {
+    fetch(
+      "https://www.blackrock.com/tools/hackathon/performance?identifiers=IXN"
+    )
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          isloaded: true,
+          items: json
+        });
+      });
+  }
   render() {
     return (
       <div>
-<<<<<<< HEAD
-        <Ham />
-        <hr></hr>
-=======
         <Navbar />
         <Tabs></Tabs>
         <hr></hr>
@@ -30,7 +46,6 @@ class App extends Component {
         </div>
       </Fragment> */}
 
->>>>>>> e3c378ed705789c7e090e3cdc7b9a6202f027d38
         <DashComp></DashComp>
         <hr></hr>
 
