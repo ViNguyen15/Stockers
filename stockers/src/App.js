@@ -16,13 +16,50 @@ import { Container } from "react-bootstrap";
 
 
 class App extends Component {
+<<<<<<< HEAD
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      isloaded: false
+    };
+  }
+
+  componentDidMount() {
+    fetch(
+      "https://www.blackrock.com/tools/hackathon/performance?identifiers=IXN"
+    )
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          isloaded: true,
+          items: json
+        });
+      });
+  }
+  render() {
+    return (
+      <div>
+=======
   
   render() {
     return (
         <div>
+>>>>>>> 2448f7bd3280240ab5700a3efa39e320de1d05f5
         <Navbar />
         </div>
+<<<<<<< HEAD
+      </Fragment> */}
+
+        <DashComp></DashComp>
+        <hr></hr>
+
+        <Logos>hi</Logos>
+        <hr></hr>
+      </div>
+=======
   
+>>>>>>> 2448f7bd3280240ab5700a3efa39e320de1d05f5
     );
   }
 }
