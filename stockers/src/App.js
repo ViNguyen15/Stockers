@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import {Route} from 'react-router-dom';
+import { Route } from "react-router-dom";
 import DashComp from "./components/dashboardcomp.jsx";
 import Logos from "./components/logo.jsx";
 import Tabs from "./components/tabs.jsx";
 import Navbar from "./components/navbar";
 import Sidenav from "./components/sideNav";
 import { Container } from "react-bootstrap";
-
-
+import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,9 +30,9 @@ class App extends Component {
   // }
   render() {
     return (
-        <div>
+      <div>
         <Navbar />
-        </div>
+      </div>
     );
   }
 }
