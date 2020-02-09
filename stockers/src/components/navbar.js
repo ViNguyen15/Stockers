@@ -28,8 +28,8 @@ export default class navbar extends React.Component {
               <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/tutorials">Tutorials</Nav.Link>
               <Nav.Link href="/stocks">Stocks</Nav.Link>
-              <Nav.Link href="/simulate">Simulate</Nav.Link>
-              <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+              {/* <Nav.Link href="/simulate">Simulate</Nav.Link>
+              <Nav.Link href="/portfolio">Portfolio</Nav.Link> */}
             </Nav>
         </Navbar>
         
@@ -46,12 +46,12 @@ export default class navbar extends React.Component {
           <Route path="/stocks">
             <Stocks />
           </Route>
-          <Route path="/simulate">
+          {/* <Route path="/simulate">
             <Simulate />
           </Route>
           <Route path="/portfolio">
             <Portfolio />
-          </Route>
+          </Route> */}
         </Switch>
     </Router>
 

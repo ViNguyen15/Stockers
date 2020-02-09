@@ -17,18 +17,18 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch(
-      "https://www.blackrock.com/tools/hackathon/performance?identifiers=IXN"
-    )
-      .then(res => res.json())
-      .then(json => {
-        this.setState({
-          isloaded: true,
-          items: json
-        });
-      });
-  }
+  // componentDidMount() {
+  //   fetch(
+  //     "https://www.blackrock.com/tools/hackathon/performance?identifiers=IXN"
+  //   )
+  //     .then(res => res.json())
+  //     .then(json => {
+  //       this.setState({
+  //         isloaded: true,
+  //         items: json
+  //       });
+  //     });
+  // }
   render() {
     return (
         <div>
