@@ -15,13 +15,25 @@ export default class stocks extends Component {
     // "https://cors-container.herokuapp.com/https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW"
     // https://api.allorigins.win/raw?url=https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW"
 
+    // componentDidMount() {
+    //     const baseURL = "https://cors-container.herokuapp.com/";
+    //     const requestURL = "https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW";
+    //     fetch("https://api.allorigins.win/raw?url=https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW")
+    //     .then(res => res.json()).then((res) => this.setState(this.jsonResponse = res)).then(this.render())
+    //     .catch(err => console.log(err))
+    // }
+
+    
+    
     componentDidMount() {
         const baseURL = "https://cors-container.herokuapp.com/";
         const requestURL = "https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW";
-        fetch("https://api.allorigins.win/raw?url=https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW")
+        fetch("https://api.allorigins.win/raw?url=https://www.blackrock.com/tools/hackathon/performance?identifiers=DPZ%2CHCMPX%2CBGAOY%2CYUEIY%2CMCBYX%2CFMSLX%2CHPT%2CPQSCX%2CAJESX%2C8551%2CATU%2C198%2C4201%2CCPE%2CBIAHX")
         .then(res => res.json()).then((res) => this.setState(this.jsonResponse = res)).then(this.render())
         .catch(err => console.log(err))
     }
+
+    
 
     formatAsPercentage(amt) {
         amt = parseFloat(amt);
@@ -35,8 +47,8 @@ export default class stocks extends Component {
         let yearToDate = "?";
         let threeYear = "?";
         let oneYear = "?";
-        console.log(this.jsonResponse, "DoLoop");
-        console.log(this.jsonResponse.resultMap.RETURNS.size, "RETURNS.SIZE");
+        // console.log(this.jsonResponse, "DoLoop");
+        // console.log(this.jsonResponse.resultMap.RETURNS.size, "RETURNS.SIZE");
         for (let i = 0; i < this.jsonResponse.resultMap.RETURNS.length; i++) {
             uniqueid.push(this.jsonResponse.resultMap.RETURNS[i].uniqueId);
         }
