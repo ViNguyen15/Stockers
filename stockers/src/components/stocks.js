@@ -4,18 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 
 export default class stocks extends Component {
-    // loaddata() {
-    //     const baseURL = "https://cors-container.herokuapp.com/";
-    //     const requestURL = "https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW";
-    //     fetch(baseURL + requestURL)
-    //     .then(res => res.json()).then((res) => this.setState(this.jsonResponse = res))
-    //     .catch(err => console.log(err));
-    // }
-
     state = {
         latestPerf: {
-            
-
         },
         jsonResponse: {},
     };
@@ -24,22 +14,18 @@ export default class stocks extends Component {
     // https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW"
     
     
-
     componentDidMount() {
         const baseURL = "https://cors-container.herokuapp.com/";
         const requestURL = "https://www.blackrock.com/tools/hackathon/performance?identifiers=LRRCX%2CSSMJX%2CGDNEY%2CANW%2CQUS%2CEWGS%2CSSTEEL%2CFMISX%2CVQCGX%2CARGW";
         fetch(baseURL + requestURL)
         .then(res => res.json()).then((res) => this.setState(this.jsonResponse = res))
         .catch(err => console.log(err));
-        
     }
-
-    
 
     render() {
         console.log(this.jsonResponse);
         return (
-               <React.Fragment>
+        <React.Fragment>
         <h1>Stocks Component</h1>
         <Container>
         <Row>
